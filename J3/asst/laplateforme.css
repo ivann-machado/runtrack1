@@ -1,0 +1,221 @@
+body {
+	background-color: #F5F5F5;
+	/*font-family: ;*/
+	margin: 0px;
+}
+
+header, footer {
+	display: block;
+
+}
+
+footer {
+	position:relative;
+	background-color: #CCCCFF;
+	/*bottom: 0px;*/
+}
+
+adress {
+	display: inline-block;
+}
+main {
+	display: block;
+	min-height: 700px;
+}
+
+
+#logoContainer {
+	margin-left: 10px;
+	display: inline-block;
+	width: 400px;
+	height: 80px;
+	background-image: url(logo-laplateforme-2024.png);
+	background-repeat: no-repeat;
+	/*background-position: left top;*/
+	background-size: contain;
+}
+
+#logoContainer:before {
+	position: absolute;
+	content: '';
+	width: 400px;
+	height: 80px;
+	background-image: url(cathide.png);
+	background-repeat: no-repeat;
+	background-size: 100px;
+	background-position-x: 395px;
+	background-origin: border-box;
+	background-clip: padding-box;
+}
+
+#logoContainer:hover:before {
+	animation: secret 2s;
+}
+
+nav {
+	position: absolute;
+	display: inline-block;
+	width: 78%;
+	height: 70px;
+	background-color: #CCCCCC;
+	font-size: 18px;
+}
+
+header a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:visited {
+	color: inherit;
+}
+
+.navlist > li {
+	display: inline-block;
+	position: relative;
+	width: 16%;
+	text-align: center;
+	margin-left: 1px;
+}
+
+.navlist > li > a {
+	display: block;
+	position: static;
+	/*margin-top: 10px;*/
+	padding: 10px 0px 20px 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.navlist > li > a:hover {
+	background-color: #DDDDDD;
+
+}
+
+.ddmenu  > ul {
+	position: absolute;
+	display: none;
+	padding: 0px;
+}
+
+header ul {
+	list-style-type: none;
+}
+
+.listName {
+	display: block;
+	padding: 10px 0px 20px 10px;
+	width: 100%;
+	height: 100%;
+}
+
+.ddmenu li {
+	position: relative;
+	text-align: left;
+	margin-top: 10px;
+	padding: 10px 0px 10px 0px;
+	width: 100%;
+	height: 45px;
+}
+.ddmenu a {
+	display: block;
+	/*position: relative;*/
+	/*margin-top: 10px;*/
+	padding: 10px 0px 10px 10px;
+	width: 100%;
+	height: 100%;
+}
+
+.ddmenu:hover > ul{
+	animation: dropdown 0.7s;
+	display: block;
+	background-color: #F0F0F0;
+}
+
+.ddmenu li:hover {
+	background-color: #F8F8F8;
+}
+
+@keyframes dropdown {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 100;
+	}
+}
+
+@keyframes secret {
+	from {
+		background-position-x: 395px;
+	}
+	90%{
+		background-position-x: 355px;
+	}
+	to {
+		background-position-x: 395px;
+	}
+}
+/*#slice {
+	position: fixed;
+	animation: slicing 3s;
+}
+@keyframes slicing {
+	from {
+		top: -10px;
+		left: -40px;
+		height: 50px;
+	}
+	30% {
+		top: 50px;
+		left: 30%;
+		height: 100%;
+	}
+	
+	60% {
+		top: 50px;
+		left: 30%;
+		height: 100%;
+		transform: rotate(-45deg);
+
+	}
+	60% {
+		top: 50px;
+		left: 30%;
+		height: 100%;
+		transform: rotate(-45deg);
+
+	}
+	60% {
+		top: 50px;
+		left: 30%;
+		height: 100%;
+		transform: rotate(-45deg);
+
+	}
+	70% {
+		top: 50px;
+		left: 30%;
+		height: 100%;
+		transform: rotate(45deg);
+	}
+	80% {
+		top: 50px;
+		left: 30%;
+		height: 100%;
+		transform: rotate(-45deg);
+	}
+	90% {
+		top: 50px;
+		left: 30%;
+		height: 100%;
+		transform: rotate(45deg);
+	}
+	to {
+		top: 1000px;
+		left: 1500px;
+		height: 100%;
+		transform: rotate(-45deg);
+	}
+
+}*/
