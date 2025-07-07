@@ -1,0 +1,33 @@
+body {
+	background-color: #50F5F5;
+	padding: 10px 10px 20px 10px;
+	font-family: arial;
+}
+h1 {
+	text-align: center;
+	/*text-shadow: 2px 3px 5px #555555;*/
+}
+h1:hover {
+	text-shadow: 2px 3px 5px #555555;
+}
+p {
+	color: #010101;
+}
+section {
+	margin-top: 40px;
+}
+section:first-of-type {
+	margin-top: 200px;
+}
+#content {
+ margin: 10px;
+}
+.coordBox {
+	padding: 10px 35px 10px 35px;
+	position: absolute;
+	right: 50px;
+	border-radius: 10px;
+	border-top-right-radius: 40px;
+	outline: 2px solid black;
+	outline-style: inset;
+}
