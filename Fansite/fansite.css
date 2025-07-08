@@ -18,16 +18,21 @@ header {
 	position: sticky;
 	top: -92px;
 }
+nav a {
+	text-decoration: none;
+	color: black;
+}
 .button {
-	margin: 0px;
+	margin: auto;
 	padding: 0px 10px;
 	font-family: Axis;
 	border: none;
 	height: 100%;
+	max-width: 14vw;
 	display: inline-block;
-	line-height:40px;
+	line-height: 40px;
 	vertical-align: middle;
-	font-size: 18px;
+	font-size: 17px;
 	color: black;
 	font-weight: 400;
 	background: linear-gradient(to bottom,
@@ -39,8 +44,6 @@ header {
 		59%,rgba(75,184,240,1) 
 		71%,rgba(58,139,194,1) 
 		84%,rgba(38,85,139,1) 100%);
-	/*border-radius: 25px;*/
-	text-decoration: none;
 }
 .button:hover {
 	background: linear-gradient(to bottom,
@@ -72,7 +75,7 @@ header {
 	border-bottom-left-radius: 60px;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 60px;
-	max-width: 640px;
+	max-width: 700px;
 	display: block;
 	height: 40px;
 	text-align: center;
@@ -195,4 +198,9 @@ figure {
 }
 figcaption {
 	font-size: 12px;
+}
+
+footer {
+	background-color: #DDD;
+	text-align: right;
 }
