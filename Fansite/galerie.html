@@ -37,12 +37,12 @@
 		<article>
 			<h2>Videos</h2>
 			<figure>
-				<div onclick="this.style.display='none';" class="viewerCont">
+				<div onclick="this.style.display='none';this.children[1].pause();" class="viewerCont">
 					<div class="fade"></div>
 					<video controls>
-						<source src="assets/NightmareLow.mp4" type="video/mp4">
+						<source src="assets/Galerie/NightmareLow.webm" type="video/webm">
 						</video>
-					</div><img src="assets/Galerie/Screenshot_1.png" alt="Cauchemar" height="112" onclick="this.previousSibling.style.display='block';">
+					</div><img src="assets/Galerie/Screenshot_1.png" alt="Cauchemar" height="112" onclick="this.previousSibling.style.display='block';this.previousSibling.children[1].play()">
 					<figcaption>Cauchemar</figcaption>
 				</figure>
 			</article>
