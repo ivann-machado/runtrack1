@@ -6,6 +6,10 @@
 	font-family: Axis;
 	src: url(assets/Axis_Extrabold.otf);
 }
+*, ::before, ::after {
+	/*margin: 0;*/
+	padding: 0;
+}
 body {
 	background-image: url("assets/BG.png");
 	background-repeat: no-repeat;
@@ -203,4 +207,11 @@ figcaption {
 footer {
 	background-color: #DDD;
 	text-align: right;
+	margin-top: 30px;
+	padding: 10px;
+	border-top: solid black px;
+}
+#cr {
+	font-size: 11px;
+	color: #444;
 }
