@@ -15,21 +15,21 @@
 	<header>
 		<img src="assets/Header.png" alt="header" id="header">
 		<nav id="buttons">
-			<a href="index.html"><button class="button" id="buttonG">
+			<a href="index.html"><div class="button" id="buttonG">
 				Accueil
-			</button></a>
-			<a href="description.html"><button class="button buttonM">
+			</div></a>
+			<a href="description.html"><div class="button buttonM">
 				Actualité
-			</button></a>
-			<a href="description.html"><button class="button buttonM">
+			</div></a>
+			<a href="description.html"><div class="button buttonM">
 				Evénements
-			</button></a>
-			<a href="galerie.html"><button class="button buttonM">
+			</div></a>
+			<a href="galerie.html"><div class="button buttonM">
 				Galerie
-			</button></a>
-			<a href="exploits.html"><button class="button" id="buttonD">
+			</div></a>
+			<a href="exploits.html"><div class="button" id="buttonD">
 				Exploits
-			</button></a>
+			</div></a>
 		</nav>
 	</header>
 	<h1>Galerie</h1>
@@ -37,15 +37,17 @@
 		<article>
 			<h2>Videos</h2>
 			<figure>
-					<div onclick="this.style.display='none';" class="viewerCont">
-						<div class="fade"></div>
-						<video src="assets/Galerie/01.png" alt="Sur un chocobo" onerror="this.onerror=null;this.src='assets/oopsie.jpg'">
-					</div><img src="assets/Galerie/01mini.png" alt="Sur un chocobo" onclick="this.previousSibling.style.display='block';">
-					<figcaption>Sur un Chocobo</figcaption>
+				<div onclick="this.style.display='none';" class="viewerCont">
+					<div class="fade"></div>
+					<video controls>
+						<source src="assets/NightmareLow.mp4" type="video/mp4">
+						</video>
+					</div><img src="assets/Galerie/Screenshot_1.png" alt="Cauchemar" height="112" onclick="this.previousSibling.style.display='block';">
+					<figcaption>Cauchemar</figcaption>
 				</figure>
-		</article>
-		<article>
-			<h2>Images</h2>
+			</article>
+			<article>
+				<h2>Images</h2>
 				<figure>
 					<div onclick="this.style.display='none';" class="viewerCont">
 						<div class="fade"></div>
@@ -110,7 +112,7 @@
 					<figcaption>Face à face avec Titan</figcaption>
 				</figure>
 			</article>
-	</div>
-</body>
+		</div>
+	</body>
 
-</html>
+	</html>
