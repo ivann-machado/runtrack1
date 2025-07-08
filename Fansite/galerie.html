@@ -1,54 +1,116 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link type="text/css" rel="stylesheet" href="fansite.css">
-	<link rel="icon" type="image/x-icon" href="Stuff/favico.png">
+	<link rel="icon" type="image/x-icon" href="assets/favico.png">
 	<title>
 		Keena Gott, la Chevalière Dragon.
 	</title>
 </head>
+
 <body>
 	<header>
-		<img src="Stuff/Header.png" alt="header" id="header">
-		<div id="buttons">
+		<img src="assets/Header.png" alt="header" id="header">
+		<nav id="buttons">
 			<a href="index.html"><button class="button" id="buttonG">
-			Accueil
-		</button></a>
+				Accueil
+			</button></a>
 			<a href="description.html"><button class="button buttonM">
-			Actualité
-		</button></a>
+				Actualité
+			</button></a>
 			<a href="description.html"><button class="button buttonM">
-					Evénements
-				</button></a>
+				Evénements
+			</button></a>
 			<a href="galerie.html"><button class="button buttonM">
-					Galerie
-				</button></a>
+				Galerie
+			</button></a>
 			<a href="exploits.html"><button class="button" id="buttonD">
-					Exploits
-				</button></a>
-		</div>
+				Exploits
+			</button></a>
+		</nav>
 	</header>
 	<h1>Galerie</h1>
 	<div class="contents">
-		<table>
-			<tr>
-				<td><a href="Stuff/Galerie/01.png" target="_blank"><img src="Stuff/Galerie/01mini.png"/></a><br/>Sur un Chocobo</td>
-				<td><a href="Stuff/Galerie/02.png" target="_blank"><img src="Stuff/Galerie/02mini.png"/><br/></a>Un Chocobo trop nourri</td>
-				<td><a href="Stuff/Galerie/03.png" target="_blank"><img src="Stuff/Galerie/03mini.png"/></a><br/>Sur un Coeurl dressé</td>
-			</tr>
-			<tr>
-				<td><a href="Stuff/Galerie/04.png" target="_blank"><img src="Stuff/Galerie/04mini.png"/></a><br/>En position d'attente</td>
-				<td><a href="Stuff/Galerie/05.png" target="_blank"><img src="Stuff/Galerie/05mini.png"/></a><br/>Un vrai travail d'orfèvre</td>
-				<td><a href="Stuff/Galerie/06.png" target="_blank"><img src="Stuff/Galerie/06mini.png"/></a><br/>Seule contre tous</td>
-			</tr>
-			<tr>
-				<td><a href="Stuff/Galerie/07.png" target="_blank"><img src="Stuff/Galerie/07mini.png"/></a><br/>Face à face avec Ifreet</td>
-				<td><a href="Stuff/Galerie/08.png" target="_blank"><img src="Stuff/Galerie/08mini.png"/></a><br/>Conversation avec Y'shtola</td>
-				<td><a href="Stuff/Galerie/09.png" target="_blank"><img src="Stuff/Galerie/09mini.png"/></a><br/>Face à face avec Titan</td>
-			</tr>
-		</table>
+		<article>
+			<h2>Videos</h2>
+			<figure>
+					<div onclick="this.style.display='none';" class="viewerCont">
+						<div class="fade"></div>
+						<video src="assets/Galerie/01.png" alt="Sur un chocobo" onerror="this.onerror=null;this.src='assets/oopsie.jpg'">
+					</div><img src="assets/Galerie/01mini.png" alt="Sur un chocobo" onclick="this.previousSibling.style.display='block';">
+					<figcaption>Sur un Chocobo</figcaption>
+				</figure>
+		</article>
+		<article>
+			<h2>Images</h2>
+				<figure>
+					<div onclick="this.style.display='none';" class="viewerCont">
+						<div class="fade"></div>
+						<img src="assets/Galerie/01.png" alt="Sur un chocobo" onerror="this.onerror=null;this.src='assets/oopsie.jpg'">
+					</div><img src="assets/Galerie/01mini.png" alt="Sur un chocobo" onclick="this.previousSibling.style.display='block';">
+					<figcaption>Sur un Chocobo</figcaption>
+				</figure>
+				<figure>
+					<div onclick="this.style.display='none';" class="viewerCont">
+						<div class="fade"></div>
+						<img src="assets/Galerie/02.png" alt="Un Chocobo trop nourri" onerror="this.onerror=null;this.src='assets/oopsie.jpg'">
+					</div><img src="assets/Galerie/02mini.png" alt="Un Chocobo trop nourri" onclick="this.previousSibling.style.display='block';">
+					<figcaption>Un Chocobo trop nourri</figcaption>
+				</figure>
+				<figure>
+					<div onclick="this.style.display='none';" class="viewerCont">
+						<div class="fade"></div>
+						<img src="assets/Galerie/03.png" alt="Sur un Coeurl dressé" onerror="this.onerror=null;this.src='assets/oopsie.jpg'">
+					</div><img src="assets/Galerie/03mini.png" alt="Sur un Coeurl dressé" onclick="this.previousSibling.style.display='block';">
+					<figcaption>Sur un Coeurl dressé</figcaption>
+				</figure>
+				<figure>
+					<div onclick="this.style.display='none';" class="viewerCont">
+						<div class="fade"></div>
+						<img src="assets/Galerie/04.png" alt="En position d'attente" onerror="this.onerror=null;this.src='assets/oopsie.jpg'">
+					</div><img src="assets/Galerie/04mini.png" alt="En position d'attente" onclick="this.previousSibling.style.display='block';">
+					<figcaption>En position d'attente</figcaption>
+				</figure>
+				<figure>
+					<div onclick="this.style.display='none';" class="viewerCont">
+						<div class="fade"></div>
+						<img src="assets/Galerie/05.png" alt="Un vrai travail d'orfèvre" onerror="this.onerror=null;this.src='assets/oopsie.jpg'">
+					</div><img src="assets/Galerie/05mini.png" alt="Un vrai travail d'orfèvre" onclick="this.previousSibling.style.display='block';">
+					<figcaption>Un vrai travail d'orfèvre</figcaption>
+				</figure>
+				<figure>
+					<div onclick="this.style.display='none';" class="viewerCont">
+						<div class="fade"></div>
+						<img src="assets/Galerie/06.png" alt="Seule contre tous" onerror="this.onerror=null;this.src='assets/oopsie.jpg'">
+					</div><img src="assets/Galerie/06mini.png" alt="Seule contre tous" onclick="this.previousSibling.style.display='block';">
+					<figcaption>Seule contre tous</figcaption>
+				</figure>
+				<figure>
+					<div onclick="this.style.display='none';" class="viewerCont">
+						<div class="fade"></div>
+						<img src="assets/Galerie/07.png" alt="Face à face avec Ifreet" onerror="this.onerror=null;this.src='assets/oopsie.jpg'">
+					</div><img src="assets/Galerie/07mini.png" alt="Face à face avec Ifreet" onclick="this.previousSibling.style.display='block';">
+					<figcaption>Face à face avec Ifreet</figcaption>
+				</figure>
+				<figure>
+					<div onclick="this.style.display='none';" class="viewerCont">
+						<div class="fade"></div>
+						<img src="assets/Galerie/08.png" alt="Conversation avec Y'shtola" onerror="this.onerror=null;this.src='assets/oopsie.jpg'">
+					</div><img src="assets/Galerie/08mini.png" alt="Conversation avec Y'shtola" onclick="this.previousSibling.style.display='block';">
+					<figcaption>Conversation avec Y'shtola</figcaption>
+				</figure>
+				<figure>
+					<div onclick="this.style.display='none';" class="viewerCont">
+						<div class="fade"></div>
+						<img src="assets/Galerie/09.png" alt="Face à face avec Titan" onerror="this.onerror=null;this.src='assets/oopsie.jpg'">
+					</div><img src="assets/Galerie/09mini.png" alt="Face à face avec Titan" onclick="this.previousSibling.style.display='block';">
+					<figcaption>Face à face avec Titan</figcaption>
+				</figure>
+			</article>
 	</div>
 </body>
+
 </html>

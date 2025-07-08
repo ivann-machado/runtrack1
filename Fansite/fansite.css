@@ -1,13 +1,13 @@
 @font-face {
 	font-family: Jupiter Pro;
-	src: url(Fontspring-DEMO-jupiter_condensed_pro.otf);
+	src: url(assets/Fontspring-DEMO-jupiter_condensed_pro.otf);
 }
 @font-face {
 	font-family: Axis;
-	src: url(Axis_Extrabold.otf);
+	src: url(assets/Axis_Extrabold.otf);
 }
 body {
-	background-image: url("Stuff/BG.png");
+	background-image: url("assets/BG.png");
 	background-repeat: no-repeat;
 	background-color: black;
 	background-position: center top;
@@ -15,12 +15,11 @@ body {
 	margin-top: 0px;
 }
 .button {
-	max-width: 160px;
-	margin: 0px auto;
+	margin: 0px;
+	padding: 0px 10px;
 	font-family: Axis;
-	border: 0px;
-	/*width: 16%;*/
-	height: 40px;
+	border: none;
+	height: 100%;
 	display: inline-block;
 	line-height:40px;
 	vertical-align: middle;
@@ -36,7 +35,7 @@ body {
 		59%,rgba(75,184,240,1) 
 		71%,rgba(58,139,194,1) 
 		84%,rgba(38,85,139,1) 100%);
-	border-radius: 25px;
+	/*border-radius: 25px;*/
 	text-decoration: none;
 }
 .button:hover {
@@ -71,7 +70,6 @@ body {
 	border-bottom-right-radius: 60px;
 	max-width: 640px;
 	display: block;
-	/*position: absolute;*/
 	height: 40px;
 	text-align: center;
 	margin: 0px auto;
@@ -88,16 +86,13 @@ body {
 #buttonG {
 	border-top-left-radius: 60px;
 	border-bottom-left-radius: 5px;
-	margin-right: -2px;
-	margin-left: 5px;
 }
 #buttonD {
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 60px;
-	margin-left: -2px;
 }
 .buttonM {
-	margin: -2px;
+	/*border-radius: 5px;*/
 }
 #header {
 	display: block;
@@ -114,7 +109,6 @@ a:focus {
 	margin: auto;
 	padding: 25px;
 	box-sizing: border-box;
-	/*min-width: 800px;*/
 	max-width: 1200px;
 	min-height: 531px;
 	background-color: #191919;
@@ -132,8 +126,8 @@ h1, #desc {
 }
 #Carte {
 	display: block;
-	width: 775px;
-	height: 436px;
+	/*width: 775px;*/
+	/*height: 436px;*/
 	margin: auto;
 }
 #ConteneurCarte {
@@ -141,6 +135,7 @@ h1, #desc {
 	background-color: #1E1E1E;
 	margin: auto;
 	color: #FFFFFF;
+	padding-bottom: 10px;
 }
 table {
 	margin: auto;
@@ -163,4 +158,36 @@ td{
 #ConteneurCarte > img{
 	max-width: 100%;
 	height: auto;
+}
+.viewerCont {
+	z-index: 1000;
+	position: fixed;
+	display: none;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.fade {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #333333;
+	opacity: 78%;
+}
+.viewerCont img {
+	position: absolute;
+	max-width: 100%;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+figure {
+	display: inline-block;
+	max-width: 200px;
+}
+figcaption {
+	font-size: 12px;
 }
