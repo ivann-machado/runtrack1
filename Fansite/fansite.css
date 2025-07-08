@@ -14,6 +14,10 @@ body {
 	font-family: Axis;
 	margin-top: 0px;
 }
+header {
+	position: sticky;
+	top: -92px;
+}
 .button {
 	margin: 0px;
 	padding: 0px 10px;
@@ -64,8 +68,8 @@ body {
 	inset 2px 2px 3px #000000;
 }
 #buttons {
-	border-top-left-radius: 60px;
-	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 60px;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 60px;
 	max-width: 640px;
@@ -84,8 +88,8 @@ body {
 		84%,rgba(38,85,139,1) 100%);
 }
 #buttonG {
-	border-top-left-radius: 60px;
-	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 60px;
 }
 #buttonD {
 	border-top-right-radius: 5px;
