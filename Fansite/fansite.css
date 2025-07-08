@@ -175,7 +175,7 @@ td{
 	background-color: #333333;
 	opacity: 78%;
 }
-.viewerCont img {
+.viewerCont img, .viewerCont video {
 	position: absolute;
 	max-width: 100%;
 	margin: auto;
