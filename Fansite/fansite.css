@@ -178,6 +178,7 @@ td{
 .viewerCont img, .viewerCont video {
 	position: absolute;
 	max-width: 100%;
+	max-height: 90%;
 	margin: auto;
 	top: 0;
 	right: 0;
