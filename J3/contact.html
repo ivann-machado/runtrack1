@@ -73,13 +73,19 @@
 				Contact
 			</h2>
 			<form>
-				<input type="select" name="civilité">
-				<input type="text" name="prenom" placeholder="Nom" required>
+				<select name="civilité" required>
+					<option value="" disabled selected>Choisissez une civilité</option>
+					<option value="mr">Monsieur</option>
+					<option value="mme">Madame</option>
+				</select>
+				<input type="text" name="prenom" placeholder="Prénom" required>
 				<input type="text" name="nom" placeholder="Nom" required>
 				<input type="email" name="email" placeholder="Email" required>
 				<input type="tel" name="phone" placeholder="Téléphone">
 				<textarea name="message" placeholder="Votre message" required></textarea>
+				<button type="submit">Envoyer</button>
 			</form>
+
 			<aside>
 
 			</aside>

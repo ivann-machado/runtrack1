@@ -1,19 +1,37 @@
+*, ::before, ::after {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	/*outline: solid 1px red;*/
+}
+
 body {
 	background-color: #F5F5F5;
-	margin: 0px;
 	width: 100vw;
 	overflow-x: hidden;
+	min-height: 100vh;
 }
 
 header, footer {
+	position: static;
 	display: block;
+	width: 100%;
+}
 
+header > a {
+	position: static;
+}
+header {
+	line-height: 100%;
+	vertical-align: bottom;
 }
 
 footer {
-	position:relative;
-	background-color: #CCCCFF;
-	/*bottom: 0px;*/
+	background-color: #DDD;
+	text-align: right;
+	margin-top: 30px;
+	padding: 10px;
+	border-top: solid black 2px;
 }
 
 adress {
@@ -32,7 +50,6 @@ main {
 	height: 80px;
 	background-image: url(logo-laplateforme-2024.png);
 	background-repeat: no-repeat;
-	/*background-position: left top;*/
 	background-size: contain;
 }
 
@@ -57,7 +74,9 @@ nav {
 	position: absolute;
 	display: inline-block;
 	width: 78%;
-	height: 70px;
+	height: 4rem;
+	/*line-height: 100%;*/
+	/*vertical-align: bottom;*/
 	background-color: #CCCCCC;
 	font-size: 18px;
 }
@@ -77,6 +96,7 @@ a:visited {
 	width: 16%;
 	text-align: center;
 	margin-left: 1px;
+	height: 100%;
 }
 
 .navlist > li > a {
@@ -157,6 +177,63 @@ header ul {
 		background-position-x: 395px;
 	}
 }
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #00BFFF;
+}
+
+form input, form textarea, form select {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  /*background-color: #191919;*/
+  /*color: #E6E6E6;*/
+  font-size: 16px;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+  outline: none;
+  border-color: #00BFFF;
+  box-shadow: 0 0 5px #00BFFF;
+}
+
+form textarea {
+  resize: none;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #00BFFF;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: linear-gradient(to bottom, #1E90FF, #00BFFF);
+}
+
+form button:active {
+  background: #007ACC;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
 /*#slice {
 	position: fixed;
 	animation: slicing 3s;
