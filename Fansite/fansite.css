@@ -23,13 +23,13 @@ body {
 header {
 	position: sticky;
 	top: -92px;
+	z-index: 1000;
 }
 nav a {
 	text-decoration: none;
 	color: black;
 }
 .button {
-	margin: auto;
 	padding: 0px 10px;
 	font-family: Axis;
 	border: none;
@@ -121,8 +121,10 @@ a:focus {
 	display: block;
 	margin: auto;
 	padding: 25px;
+	min-height: 50em;
 	box-sizing: border-box;
 	max-width: 1200px;
+	min-height: 531px;
 	background-color: #191919;
 	color: #E6E6E6;
 }
