@@ -123,7 +123,6 @@ a:focus {
 	padding: 25px;
 	box-sizing: border-box;
 	max-width: 1200px;
-	min-height: 531px;
 	background-color: #191919;
 	color: #E6E6E6;
 }
@@ -217,4 +216,22 @@ footer {
 #cr {
 	font-size: 11px;
 	color: #444;
+}
+.postTime {
+	font-size: 11px;
+	color: #AAA;
+	line-height: 0.5em;
+}
+.actuCont {
+	border-bottom: ridge;
+	border-color: #00BFFF; 
+	display: block;
+
+	padding: 10px 25px;
+	box-sizing: border-box;
+}
+.eventCont {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
