@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="fansite.css">
+	<link rel="icon" type="image/x-icon" href="assets/favico.png">
+	<title>
+		Keena Gott, la Chevalière Dragon.
+	</title>
+</head>
+
+<body>
+	<header>
+		<img src="assets/Header.png" alt="header" id="header">
+		<nav id="buttons">
+			<a href="index.html"><div class="button" id="buttonG">
+				Accueil
+			</div></a>
+			<a href="actualite.html"><div class="button buttonM">
+				Actualité
+			</div></a>
+			<a href="evenement.html"><div class="button buttonM">
+				Evénements
+			</div></a>
+			<a href="galerie.html"><div class="button buttonM">
+				Galerie
+			</div></a>
+			<a href="exploits.html"><div class="button" id="buttonD">
+				Exploits
+			</div></a>
+		</nav>
+	</header>
+	<main>
+		<h1>Nous contacter</h1>
+		<div class="contents">
+			<form method="post" action="/submit">
+				<fieldset>
+					<!-- <legend>Contact Form</legend> -->
+
+					<label for="name">Nom :</label>
+					<input type="text" id="name" name="name" required aria-label="Nom">
+
+					<label for="email">Email :</label>
+					<input type="email" id="email" name="email" required aria-label="Email">
+
+					<label for="message">Message :</label>
+					<textarea id="message" name="message" rows="4" required aria-label="Message"></textarea>
+
+					<button type="submit">Envoyer</button>
+				</fieldset>
+			</form>
+			<p>Pour toute question ou suggestion, n'hésitez pas à nous contacter via le formulaire ci-dessus.</p>
+			<p>Vous pouvez également nous suivre sur nos réseaux sociaux pour rester informé des dernières nouvelles :</p>
+			<ul>
+				<li><a href="https://www.facebook.com/KeenaGott" target="_blank">Facebook</a></li>
+				<li><a href="https://twitter.com/KeenaGott" target="_blank">Twitter</a></li>
+			</ul>
+
+		</div>
+	</main>
+	<footer>
+		<p id="cr">© 2023 Fansite de Keena Gott. Tous droits réservés.</p>
+		<nav>
+			<a href="actualite.html">Actualité</a> |
+			<a href="evenement.html">Evénement</a> |
+			<a href="galerie.html">Galerie</a> |
+			<a href="exploits.html">Exploits</a> |
+			<a href="https://www.facebook.com/KeenaGott" target="_blank"><img src="assets/icons8-facebook-50.png" alt="Facebook"></a> |
+			<a href="https://twitter.com/KeenaGott" target="_blank"><img src="assets/icons8-x-50.png" alt="Twitter"></a>
+		</nav>
+	</footer>
+</body>
+
+</html>
